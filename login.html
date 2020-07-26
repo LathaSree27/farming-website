@@ -1,0 +1,188 @@
+<html>
+<body>
+<head>
+
+<style>
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;  
+  margin: 12px 0 6px 0;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+form{
+	border: 3px solif=d #f1f1f1;
+	width:50%;
+	height=50%;
+	-ms-transform:translateX(50%);
+	transform:translateX(50%);
+}
+/* Full-width input fields */
+input[type=text], input[type=password] ,input[type=email]   {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  
+  background-color : white;  
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button:hover {
+  opacity:1;
+}
+* Float cancel and signup buttons and add an equal width */
+a{
+text-decoration:none;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+
+.cancelbtn {
+ text-decoration:none;
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+  -ms-transform:translateX(-20%);
+  transform :translateX(-20%);
+}
+/* Set a style for all buttons */
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 8px;
+  display: block;
+  position: middle;
+  -ms-transform:translateX(+50%);
+  transform:translateX(+50%);  
+  
+}
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  width :40%;
+  height :100%;
+  -ms-transform:translateX(60%);
+  transform:translateX(60%);
+  
+}
+
+</style>
+</head>
+<form >
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" width="100" height="80" class="avatar">
+  </div>
+
+   <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter User Full Name" name="email" required><b></b>
+
+	<label for="pswd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password"  id="myInput" required>
+	<input type="checkbox" onclick="myFunction()">Show Password
+	<script>
+	function myFunction() {
+ 	 var x = document.getElementById("myInput");
+  	if (x.type === "password") {
+    x.type = "text";
+  	} else {
+    x.type = "password";
+  	}
+	}
+</script>	
+<br>
+<br>
+<br>
+<center>
+<div class="container" style="background-color:#000000">
+  <a href="user.html" "><button type="button" class="cancelbtn"> Login</button></a></center>
+  </div>
+  <div class="container" style="background-color:#011101">
+  <center>
+    <a href="index.html"><button type="button" class="cancelbtn"> Cancel</button></a>
+	</center>
+    
+  </div>
+</form>
+</body>
+</html>
